@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assesmen Pra Anastesi</title>
+    <!-- <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./plugins/sidebar-nav/dist/sidebar-nav.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/colors/megna-dark.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="./plugins/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./plugins/fontawesome-6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./plugins/fontawesome-6.4.2/css/v4-shims.css" rel="stylesheet">
+</head>
+<body>
+ <div class="container">
+
+        <h2 class="text-center m-t-30 m-b-30">
+            Asesmen Pra Anastesi
+        </h2>
+        
+        <form>
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label>No. RM</label>
+                        <input type="text" class="form-control" placeholder="RM01" disabled>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label>Nama Lengkap</label>
+                        <input type="text" class="form-control" placeholder="Nama Pasien" disabled>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label>Tanggal Lahir</label>
+                        <input type="text" class="form-control" placeholder="01/01/2024" disabled>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label>Jenis Kelamin</label>
+                        <input type="text" class="form-control" placeholder="Jenis Kelamin Pasien" disabled>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label>Ruangan</label>
+                        <input type="text" class="form-control" placeholder="Ruangan Pasien" disabled>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label>Tanggal Pengkajian</label>
+                        <input type="text" class="form-control" placeholder="01/01/2023" disabled>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+              <div class="form-group">
+
+                <label for="" class="form-check-label">Anamesa</label>
+                <label class="radio-inline">
+                  <input type="radio" name="anamesa" id="pasien" value="pasien" checked> Pasien
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="anamesa" id="keluarga" value="keluarga"> Keluarga
+                </label>
+              </div>
+            </div>
+              
+            <div class="row">
+                <div class="form-group">
+                    <label for="" class="form-check-label text-center">Riwayat Anestesi</label>
+                    <textarea class="form-control" name="ada" id="riwayatInText" rows="3" placeholder="Sebutkan Jika ada"></textarea>
+                </div>
+              </div>
+
+            <div class="row">
+              <div class="form-group">
+                <label for="" class="form-check-label text-center">Komplikasi</label>
+                <textarea class="form-control" name="ada" id="komplikasiInText" rows="3" placeholder="Sebutkan Jika ada"></textarea>
+              </div>
+              </div>
+
+            <div class="row">
+            <div class="form-group">
+                <label for="" class="control-label">Obat-obatan yang sedang di konsumsi</label>
+                <textarea class="form-control" name="obat" rows="3" placeholder="Sebutkan Jika ada"></textarea>
+            </div>
+            </div>
+
+            <div class="row">
+                <label for="" class="form-check-label text-center">Riwayat Alergi</label>
+                <textarea class="form-control" name="ada" id="alergiInText" rows="3" placeholder="Sebutkan Jika ada"></textarea>
+            </div>
+
+            
+            <div class="row m-t-20 m-b-20">
+                <div class="col-md">
+                  <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                           <label>Berat Badan</label>
+                          <input type="text" class="form-control" name="bb" placeholder="Berat Badan">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Tinggi Badan</label>
+                          <input type="text" class="form-control" name="tb" placeholder="Tinggi Badan">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>BM</label>
+                          <input type="text" class="form-control" name="bm" placeholder="BM">
+                        </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <h4>Tanda Vital</h4>
+                    <hr>
+                      <div class="row">
+
+                        <div class="col-md-6">
+                          <div class="form-group has-feedback">
+                            <label for="inputTD" class="control-label">Tekanan Darah</label>
+                            <div class="input-group">
+                              <input type="text" class="form-control input-mask" id="inputTDS" null="false" name="tensi_sitolik" placeholder="Tekanan Darah Sitolik" value="" data-original-title="" title="">
+                              <div class="input-group-addon">/</div>
+                              <input type="text" class="form-control input-mask" id="inputTDD" null="false" name="tensi_diastolik" placeholder="Tekanan Darah Diastolik" value="" data-original-title="" title="">
+                              <div class="input-group-addon">mmHg</div>
+                            </div>
+                            <span class="form-control-feedback"></span>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3">
+                        <div class="form-group">
+                        <label class="control-label" for="RrForm">RR</label>                     
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="RrForm" aria-describedby="RrFormStatus">
+                            <span class="input-group-addon">x/mnt</span>
+                        </div>                        
+                        </div>
+                        </div>
+
+                       <div class="col-md-3">
+                          <div class="form-group">
+                            <label class="control-label" for="NadiForm">Nadi</label>                     
+                              <div class="input-group">
+                                  <input type="text" class="form-control" id="NadiForm" aria-describedby="NadiFormStatus">
+                                  <span class="input-group-addon">x/mnt</span>
+                              </div>                        
+                          </div>
+                        </div> 
+
+                        <div class="col-md-3">
+                        <div class="form-group">
+                        <label class="control-label" for="SkorForm">Skor Nyeri</label>                     
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="SkorForm" aria-describedby="SkorFormStatus">
+                        </div>                        
+                        </div>
+                        </div>
+
+                        <div class="col-md-3">
+                          <div class="form-group">
+                            <label class="control-label" for="tForm">T</label>                     
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="tForm" aria-describedby="tFormStatus">
+                            </div>                        
+                          </div>
+                        </div>
+
+                      </div>
+                        
+            </div>
+
+            <div class="row">
+                <h4>Evaluasi Jalan Nafas</h4>
+                    <hr>
+
+                 <div class="form-group">
+                    <label for="" class="form-check-label text-center">Bebas</label>
+                    <label class="radio-inline">
+                        <input type="radio" name="bebas" id="ya" value="ya" checked=""> Ya
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="bebas" id="tidak" value="tidak"> Tidak
+                    </label>
+                 </div>
+
+                <div class="form-group">
+                    <label for="" class="form-check-label text-center">Protusi Mandibula</label>
+                    <label class="radio-inline">
+                        <input type="radio" name="protusi" id="ya" value="ya" checked=""> Ya
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="protusi" id="tidak" value="tidak"> Tidak
+                    </label>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                          <label class="control-label" for="mForm">Buka Mulut</label>                     
+                            <div class="input-group">
+                              <input type="text" class="form-control" id="mForm" aria-describedby="mFormStatus">
+                              <span class="input-group-addon">Jari</span>
+                            </div>                        
+                         </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                          <label class="control-label" for="JmForm">Jarak Mentohyold</label>                     
+                            <div class="input-group">
+                              <input type="text" class="form-control" id="JmForm" aria-describedby="JmFormStatus">
+                              <span class="input-group-addon">Jari</span>
+                            </div>                        
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                          <label class="control-label" for="JhForm">jarak Hyonthroid</label>                     
+                            <div class="input-group">
+                              <input type="text" class="form-control" id="JhForm" aria-describedby="JhFormStatus">
+                              <span class="input-group-addon">Jari</span>
+                            </div>                        
+                         </div>
+                </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="" class="form-check-label text-center">Leher</label>
+                    <label class="radio-inline">
+                        <input type="radio" name="leher" id="pendek" value="pendek" checked=""> Pendek
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="leher" id="tidak" value="tidak"> Tidak
+                    </label>
+                </div>
+
+                 <div class="form-group">
+                    <label for="" class="form-check-label text-center">Gerak Leher</label>
+                    <label class="radio-inline">
+                        <input type="radio" name="gerak" id="bebas" value="bebas" checked=""> Bebas
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="gerak" id="terbatas" value="terbatas"> Terbatas
+                    </label>
+                </div>
+                
+            <div class="col-md">
+            <div class="form-group">
+                <label for="" class="control-label">Malampathy</label>
+                <textarea class="form-control" name="malampathy" rows="3"></textarea>
+            </div>
+            </div>
+
+            <div class="form-group">
+                <label for="" class="form-check-label text-center">Obesitas</label>
+                <label class="radio-inline">
+                    <input type="radio" name="obesitas" id="ya" value="ya" checked=""> Ya
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="obesitas" id="tidak" value="tidak"> Tidak
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="" class="form-check-label text-center">Massa</label>
+                <label class="radio-inline">
+                    <input type="radio" name="massa" id="ya" value="ya" checked=""> Ya
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="massa" id="tidak" value="tidak"> Tidak
+                </label>
+            </div>
+
+            <div class="row">
+              <div class="col-md">
+            <div class="form-group">
+                <label for="" class="control-label">Gigi Palsu</label>
+                <textarea class="form-control" name="gigi" rows="3"></textarea>
+            </div>
+            </div>
+            </div>
+
+            <div>
+                <label for="" class="form-check-label text-center">Sulit Ventilasi</label>
+                <label class="radio-inline">
+                    <input type="radio" name="ventilasi" id="ya" value="ya"> Ya
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="ventilasi" id="tidak" value="tidak"> Tidak
+                </label>
+            </div>
+        </div>
+
+
+        <div class="row">
+
+            <div class="col-md">
+                    <div class="row">
+                    <h4>Pemeriksaan Fisik</h4>
+                        <hr>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="" class="control-label">Jantung</label>
+                    <textarea class="form-control areaText" name="jantung" rows="3"></textarea>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="" class="control-label">Paru</label>
+                    <textarea class="form-control areaText" name="paru" rows="3"></textarea>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="" class="control-label">Abdomen</label>
+                    <textarea class="form-control areaText" name="abdomen" rows="3"></textarea>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="" class="control-label">Ekstremitas</label>
+                    <textarea class="form-control areaText" name="ekstremitas" rows="3"></textarea>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="" class="control-label">Tulang Belakang</label>
+                    <textarea class="form-control areaText" name="tulang" rows="3"></textarea>
+                </div>
+            </div>
+            
+            </div>
+
+            
+
+
+            </div>
+
+            <div class="col-md">
+                <div class="row">
+                    <h4>Catatan dan Riwayat Penyakit</h4>
+                        <hr>
+                        <div class="form-group">
+                            <label for="inputPenyakit" class="control-label">
+                                Catatan dan Riwayat Penyakit
+                                <div>
+                                    <button type="button" class="btn btn-info btn-sm btn-isian-riwayat" data-input="Diabetes">Diabetes</button>
+                                    <button type="button" class="btn btn-sm btn-info btn-isian-riwayat" data-input="Hipertensi">Hipertensi</button>
+                                    <button type="button" class="btn btn-info btn-sm btn-isian-riwayat" data-input="TBC">TBC</button>
+                                    <button type="button" class="btn btn-info btn-sm btn-isian-riwayat" data-input="Kejang">Kejang</button>
+                                    <button type="button" class="btn btn-info btn-sm btn-isian-riwayat" data-input="Hepatitis">Hepatitis</button>
+                                    <button type="button" class="btn btn-info btn-sm btn-isian-riwayat" data-input="Jantung">Jantung</button>
+                                    <button type="button" class="btn btn-info btn-sm btn-isian-riwayat" data-input="Stroke">Stroke</button>
+                                    <button type="button" class="btn btn-info btn-sm btn-isian-riwayat" data-input="Ginjal">Ginjal</button>
+                                    <button type="button" class="btn btn-info btn-sm btn-isian-riwayat" data-input="Obesitas">Obesitas</button>
+                                    <button type="button" class="btn btn-info btn-sm btn-isian-riwayat" data-input="Merokok">Merokok</button>
+                                    <button type="button" class="btn btn-info btn-sm btn-isian-riwayat" data-input="Alkohol">Alkohol</button>
+                                    <button type="button" class="btn btn-info btn-sm btn-isian-riwayat" data-input="Mengorok">Mengorok</button>
+                                </div>
+                            </label>
+                            <textarea id="inputPenyakit" class="form-control" rows="3" name="riwayat_penyakit_pasien"></textarea>
+                        </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-md">
+                <div class="row">
+                    <h4>Pemeriksaan Laboratorium dan Penunjang</h4>
+                        <hr style="margin-top: 5px;">
+
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="" class="control-label">Hb/hct/CBC</label>
+                            <textarea class="form-control areaText" name="hb" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="" class="control-label">Fungsi Ginjal</label>
+                            <textarea class="form-control areaText" name="fungsiginjal" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="" class="control-label">Fungsi Hati</label>
+                            <textarea class="form-control areaText" name="fungsihati" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="" class="control-label">Elektrolit</label>
+                            <textarea class="form-control areaText" name="elektrolit" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="" class="control-label">Faal Hemotasis</label>
+                            <textarea class="form-control areaText" name="faal" rows="3"></textarea>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="" class="control-label">Rontgen</label>
+                            <textarea class="form-control areaText" name="rontgen" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="" class="control-label">ECG</label>
+                            <textarea class="form-control areaText" name="ecg" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="" class="control-label">Lain-lain</label>
+                            <textarea class="form-control areaText" name="lainnya" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md">
+                 <div class="row" style="margin-top: 20px;">
+                    <h4>Rencana Anastesi</h4>
+                        <hr style="margin-top: 5px;">
+
+                    
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md">
+                <div class="row" style="margin-top: 20px;">
+                    <h4>Simpulan Evaluasi Pra-Anastesi</h4>
+                        <hr style="margin-top: 5px;">
+
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="" class="control-label">PS Asa</label>
+                            <textarea class="form-control areaText" name="psasa" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="" class="control-label">Penyulit</label>
+                            <textarea class="form-control areaText" name="penyulit" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="" class="control-label">Komplikasi</label>
+                            <textarea class="form-control areaText" name="komplikasi" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="" class="control-label">Analgetik Post Op</label>
+                            <textarea class="form-control areaText" name="analgetik" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="" class="control-label">Puasa</label>
+                            <textarea class="form-control areaText" name="puasa" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="" class="control-label">Sediaan Darah</label>
+                            <textarea class="form-control areaText" name="darah" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+        </form>
+
+
+
+    </div>
+</body>
+<script src="./plugins/jquery/jquery.min.js"></script>
+<script src="./js/customs.js"></script>
+<script src="./bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./plugins/blockUI/jquery.blockUI.js"></script>
+</html>
