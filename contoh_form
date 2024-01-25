@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assesmen Pra Sedasi</title>
+    <!-- <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./plugins/sidebar-nav/dist/sidebar-nav.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/colors/megna-dark.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="./plugins/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./plugins/fontawesome-6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./plugins/fontawesome-6.4.2/css/v4-shims.css" rel="stylesheet">
+</head>
+<body>
+  <h3 class="box-title b-b">TANDA-TANDA VITAL</h3>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group has-feedback">
+										<label for="inputDJ" class="control-label">Nadi</label>
+										<div class="input-group">
+											<input type="text" class="form-control input-mask" id="inputDJ" null="false" name="nadi" placeholder="Kondisi Nadi Pasien" value="" data-original-title="" title="">
+											<div class="input-group-addon">bpm</div>
+										</div>
+										<span class="form-control-feedback"></span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group has-feedback">
+										<label for="inputTD" class="control-label">Tekanan Darah</label>
+										<div class="input-group">
+											<input type="text" class="form-control input-mask" id="inputTDS" null="false" name="tensi_sitolik" placeholder="Tekanan Darah Sitolik" value="" data-original-title="" title="">
+											<div class="input-group-addon">/</div>
+											<input type="text" class="form-control input-mask" id="inputTDD" null="false" name="tensi_diastolik" placeholder="Tekanan Darah Diastolik" value="" data-original-title="" title="">
+											<div class="input-group-addon">mmHg</div>
+										</div>
+										<span class="form-control-feedback"></span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group has-feedback">
+										<label for="inputSB" class="control-label">Suhu Badan</label>
+										<div class="input-group">
+											<input type="text" class="form-control input-mask" id="inputSB" null="false" name="suhu_badan" placeholder="Suhu Badan Pasien" value="" data-original-title="" title="">
+											<div class="input-group-addon">°C</div>
+										</div>
+										<span class="form-control-feedback"></span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group has-feedback">
+										<label for="inputNafas" class="control-label">Nafas</label>
+										<div class="input-group">
+											<input type="text" class="form-control input-mask" id="inputNafas" null="false" name="nafas" placeholder="Nafas Pasien" value="" data-original-title="" title="">
+											<div class="input-group-addon">x/menit</div>
+										</div>
+										<span class="form-control-feedback"></span>
+									</div>
+								</div>
+							</div>
+
+							<h3 class="box-title b-b m-t-0">PEMERIKSAAN FISIK</h3>
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-group">
+										<label for="inputKondisi" class="control-label">Keadaan Umum</label>
+										<div class="radio-list">
+											<label class="radio-inline p-l-0 m-0 m-r-10">
+												<div class="radio radio-info">
+													<input type="radio" name="kondisi_fisik" id="BaikKU" value="Baik" checked="">
+													<label for="BaikKU">Baik</label>
+												</div>
+											</label>
+											<label class="radio-inline p-l-0 m-0 m-r-10">
+												<div class="radio radio-info">
+													<input type="radio" name="kondisi_fisik" id="Lemas" value="Lemas">
+													<label for="Lemas">Lemas </label>
+												</div>
+											</label>
+											<label class="radio-inline p-l-0 m-0 m-r-10">
+												<div class="radio radio-info">
+													<input type="radio" name="kondisi_fisik" id="Sakit_Ringan" value="Sakit Ringan">
+													<label for="Sakit_Ringan">Sakit Ringan </label>
+												</div>
+											</label>
+											<label class="radio-inline p-l-0 m-0 m-r-10">
+												<div class="radio radio-info">
+													<input type="radio" name="kondisi_fisik" id="Sakit_Sedang" value="Sakit Sedang">
+													<label for="Sakit_Sedang">Sakit Sedang </label>
+												</div>
+											</label>
+											<label class="radio-inline p-l-0 m-0 m-r-10">
+												<div class="radio radio-info">
+													<input type="radio" name="kondisi_fisik" id="Sakit_Berat" value="Sakit Berat">
+													<label for="Sakit_Berat">Sakit Berat </label>
+												</div>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<label class="control-label">Respon</label>
+									<div class="radio-list">
+										<label class="radio-inline p-0">
+											<div class="radio radio-info">
+												<input type="radio" name="respon" id="RSP1" value="Alert" checked="">
+												<label for="RSP1">Alert</label>
+											</div>
+										</label>
+										<label class="radio-inline p-0">
+											<div class="radio radio-info">
+												<input type="radio" name="respon" id="RSP2" value="Pain">
+												<label for="RSP2">Pain</label>
+											</div>
+										</label>
+										<label class="radio-inline p-0">
+											<div class="radio radio-info">
+												<input type="radio" name="respon" id="RSP3" value="Verbal">
+												<label for="RSP3">Verbal</label>
+											</div>
+										</label>
+										<label class="radio-inline p-0">
+											<div class="radio radio-info">
+												<input type="radio" name="respon" id="RSP4" value="Unresponsive">
+												<label for="RSP4">Unresponsive</label>
+											</div>
+										</label>
+										<label class="radio-inline p-0 m-0">
+											<div class="radio radio-info">
+												<input type="radio" name="respon" id="RSP5" value="Acute Confusion">
+												<label for="RSP5">Acute Confusion</label>
+											</div>
+										</label>
+										<label class="radio-inline p-0">
+											<div class="radio radio-info">
+												<input type="radio" name="respon" id="RSP6" value="Delirium">
+												<label for="RSP6">Delirium</label>
+											</div>
+										</label>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<label for="inputKesadaran" class="control-label">Kesadaran</label>
+										<input type="text" class="form-control" name="kesadaran" id="inputKesadaran" placeholder="Tingkat Kesadaran Pasien">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-group has-feedback">
+										<label for="inputTB" class="control-label">Tinggi Badan</label>
+										<div class="input-group">
+											<input type="text" class="form-control input-mask" id="inputTB" null="true" name="tinggi_badan" placeholder="Tinggi Badan Pasien" value="">
+											<div class="input-group-addon">cm</div>
+										</div>
+										<span class="form-control-feedback"></span>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group has-feedback">
+										<label for="inputBB" class="control-label">Berat Badan</label>
+										<div class="input-group">
+											<input type="text" class="form-control input-mask" id="inputBB" null="true" name="berat_badan" placeholder="Berat Badan Pasien" value="">
+											<div class="input-group-addon">kg</div>
+										</div>
+										<span class="form-control-feedback"></span>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group has-feedback">
+										<label for="inputLK" class="control-label">Lingkar Kepala</label>
+										<div class="input-group">
+											<input type="text" class="form-control input-mask" id="inputLK" name="lingkar_kepala" placeholder="Lingkar Kepala Pasien" value="">
+											<div class="input-group-addon">cm</div>
+										</div>
+										<span class="form-control-feedback"></span>
+									</div>
+								</div>
+							</div>
+
+							<h3 class="box-title b-b m-t-0">PEMERIKSAAN PENUNJANG</h3>
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-group">
+										<label for="gds" class="control-label">GDS</label>
+										<input type="text" class="form-control" name="gds" id="gds" placeholder="Kadar Gula Pasien" value="">
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<label for="gdp" class="control-label">GDP</label>
+										<input type="text" class="form-control" name="gdp" id="gdp" placeholder="Kadar Gula Pasien" value="">
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<label for="kolesterol" class="control-label">Kolesterol</label>
+										<input type="text" class="form-control" name="kolesterol" id="kolesterol" placeholder="Kadar Kolesterol Pasien" value="">
+									</div>
+								</div>
+							</div>
+
+							<h3 class="box-title b-b m-t-30">Asesmen Nyeri</h3>
+							<div class="row">
+								<div class="col-lg-push-2 col-lg-8 col-md-12">
+									<div id="debt-amount-slider" class="form-group">
+										<input type="radio" name="skala_nyeri" id="0" value="0" required="" null="false" checked="" data-original-title="" title="">
+										<label for="0" data-debt-amount="0" keterangan="No Pain"></label>
+										<input type="radio" name="skala_nyeri" id="1" value="1" required="" null="false" data-original-title="" title="">
+										<label for="1" data-debt-amount="1"></label>
+										<input type="radio" name="skala_nyeri" id="2" value="2" required="" null="false" data-original-title="" title="">
+										<label for="2" data-debt-amount="2" keterangan="Mild"></label>
+										<input type="radio" name="skala_nyeri" id="3" value="3" required="" null="false" data-original-title="" title="">
+										<label for="3" data-debt-amount="3"></label>
+										<input type="radio" name="skala_nyeri" id="4" value="4" required="" null="false" data-original-title="" title="">
+										<label for="4" data-debt-amount="4" keterangan="Moderate"></label>
+										<input type="radio" name="skala_nyeri" id="5" value="5" required="" null="false" data-original-title="" title="">
+										<label for="5" data-debt-amount="5"></label>
+										<input type="radio" name="skala_nyeri" id="6" value="6" required="" null="false" data-original-title="" title="">
+										<label for="6" data-debt-amount="6" keterangan="Severe"></label>
+										<input type="radio" name="skala_nyeri" id="7" value="7" required="" null="false" data-original-title="" title="">
+										<label for="7" data-debt-amount="7"></label>
+										<input type="radio" name="skala_nyeri" id="8" value="8" required="" null="false" data-original-title="" title="">
+										<label for="8" data-debt-amount="8" keterangan="Very Severe"></label>
+										<input type="radio" name="skala_nyeri" id="9" value="9" required="" null="false" data-original-title="" title="">
+										<label for="9" data-debt-amount="9"></label>
+										<input type="radio" name="skala_nyeri" id="10" value="10" required="" null="false" data-original-title="" title="">
+										<label for="10" data-debt-amount="10" keterangan="Worst Pain Possible"></label>
+
+										<!-- <div id="debt-amount-pos"></div> -->
+									</div>
+									<img class="img-responsive" src="http://localhost/simrs/multazam/assets/images/skala-nyeri.jpg">
+								</div>
+								<div class="col-lg-6 col-md-12"></div>
+							</div>
+
+							<h3 class="box-title b-b m-t-30">Asesmen Resiko Jatuh</h3>
+							<div class="row">
+								<div class="col-lg-8 col-md-8">
+									<div class="form-group has-feedback">
+										<table>
+											<tbody><tr>
+												<th colspan="2">a. Cara Berjalan Pasien</th>
+											</tr>
+											<tr>
+												<td class="p-10" style="width: 500px">1. Tidak seimbang/ sempoyongan/limbung</td>
+												<td style="min-width: 200px">
+													<div class="radio-list">
+														<label class="radio-inline p-0">
+															<div class="radio radio-info">
+																<input type="radio" name="cara_berjalan_a" id="cara_berjalan_a1" value="Tidak" checked="">
+																<label for="cara_berjalan_a1">Tidak</label>
+															</div>
+														</label>
+														<label class="radio-inline">
+															<div class="radio radio-info">
+																<input type="radio" name="cara_berjalan_a" id="cara_berjalan_a2" value="Ya">
+																<label for="cara_berjalan_a2">Ya </label>
+															</div>
+														</label>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="p-10">2. Jalan dengan mnenggunakan alat bantu/gerak</td>
+												<td>
+													<div class="radio-list">
+														<label class="radio-inline p-0">
+															<div class="radio radio-info">
+																<input type="radio" name="cara_berjalan_b" id="cara_berjalan_b1" value="Tidak" checked="">
+																<label for="cara_berjalan_b1">Tidak</label>
+															</div>
+														</label>
+														<label class="radio-inline">
+															<div class="radio radio-info">
+																<input type="radio" name="cara_berjalan_b" id="cara_berjalan_b2" value="Ya">
+																<label for="cara_berjalan_b2">Ya </label>
+															</div>
+														</label>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th>b. Menopang saat akan duduk</th>
+												<td>
+													<div class="radio-list">
+														<label class="radio-inline p-0">
+															<div class="radio radio-info">
+																<input type="radio" name="cara_duduk" id="cara_duduk1" value="Tidak" checked="">
+																<label for="cara_duduk1">Tidak</label>
+															</div>
+														</label>
+														<label class="radio-inline">
+															<div class="radio radio-info">
+																<input type="radio" name="cara_duduk" id="cara_duduk2" value="Ya">
+																<label for="cara_duduk2">Ya </label>
+															</div>
+														</label>
+													</div>
+												</td>
+											</tr>
+										</tbody></table>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-4">
+									<div class="white-box text-center alert-resiko bg-success">
+										<h2 class="text-white resiko"><u>TIDAK BERESIKO</u></h2>
+										<h4 class="text-white resiko">Tidak Ditemukan a &amp; b</h4>
+									</div>
+									<input type="hidden" name="resiko_jatuh" id="resiko_jatuh" value="TIDAK BERESIKO">
+								</div>
+							</div>
+</body>
+<script src="./plugins/jquery/jquery.min.js"></script>
+<script src="./js/customs.js"></script>
+<script src="./bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./plugins/blockUI/jquery.blockUI.js"></script>
+</html>
