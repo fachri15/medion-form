@@ -20,75 +20,83 @@
     <link rel="stylesheet" href="./plugins/fontawesome-6.4.2/css/v4-shims.css" rel="stylesheet">
 </head>
 <body>
-  <h2 class="text-center m-t-20 m-b-20">
+
+  <div class="m-l-20 m-r-20">
+
+    <h2 class="text-center m-t-20 m-b-20">
     Jawaban Konsul (ASSESMEN PRA SEDASI / PRA ANESTESI)
-  </h2>
+   </h2>
 
   <div class="row m-t-20">
-    <h4>Pemeriksaan Fisik</h4>
-    <hr>
+    <h3 class="box-title b-b">Pemeriksaan Fisik</h3>
 
-    <div class="col-md-2">
+    <div class="col-md-3">
+      
       <div class="form-group">
         <label class="control-label" for="tinggiForm">Tinggi</label>
         <div class="input-group">
-          <input type="text" class="form-control" id="tinggiForm" aria-describedby="tinggiFormStatus">
+          <input type="text" class="form-control" id="tinggiForm" aria-describedby="tinggiFormStatus" placeholder="Tinggi pasien">
           <span class="input-group-addon">cm</span>
         </div>
       </div>
-    </div>
 
-    <div class="col-md-2">
       <div class="form-group">
         <label class="control-label" for="beratForm">Berat</label>
         <div class="input-group">
-          <input type="text" class="form-control" id="beratForm" aria-describedby="beratFormStatus">
+          <input type="text" class="form-control" id="beratForm" aria-describedby="beratFormStatus" placeholder="Berat Badan Pasien">
           <span class="input-group-addon">kg</span>
         </div>
       </div>
+
     </div>
 
-    <div class="col-md-2">
+    <div class="col-md-3">
+
       <div class="form-group">
         <label class="control-label" for="sadarForm">Kesadaran</label>
         <div class="input-group">
-          <input type="text" class="form-control" id="sadarForm" aria-describedby="sadarFormStatus">
+          <input type="text" class="form-control" id="sadarForm" aria-describedby="sadarFormStatus" placeholder="Tingkat Kesadaran Pasien">
         </div>
       </div>
-    </div>
 
-    <div class="col-md-2">
       <div class="form-group">
         <label class="control-label" for="nadiForm">Nadi</label>
         <div class="input-group">
-          <input type="text" class="form-control" id="nadiForm" aria-describedby="nadiFormStatus">
+          <input type="text" class="form-control" id="nadiForm" aria-describedby="nadiFormStatus" placeholder="Denyut Nadi">
+          <span class="input-group-addon">bpm</span>
         </div>
       </div>
+
     </div>
 
-    <div class="col-md-2">
-      <div class="form-group">
-        <label class="control-label" for="tekananForm">Tekanan Darah</label>
+    <div class="col-md-6">
+
+      <div class="form-group has-feedback">
+        <label for="inputTD" class="control-label">Tekanan Darah</label>
         <div class="input-group">
-          <input type="text" class="form-control" id="tekananForm" aria-describedby="tekananFormStatus">
+          <input type="text" class="form-control input-mask" id="inputTDS" null="false" name="tensi_sitolik" placeholder="Tekanan Darah Sitolik" value="" data-original-title="" title="">
+          <div class="input-group-addon">/</div>
+          <input type="text" class="form-control input-mask" id="inputTDD" null="false" name="tensi_diastolik" placeholder="Tekanan Darah Diastolik" value="" data-original-title="" title="">
+          <div class="input-group-addon">mmHg</div>
         </div>
+        <span class="form-control-feedback"></span>
       </div>
+
+         <div class="form-group">
+          <label class="control-label" for="nafasForm">Pernafasan</label>
+          <div class="input-group">
+            <input type="text" class="form-control" id="nafasForm" aria-describedby="nafasFormStatus">
+            <span class="input-group-addon">x/menit</span>
+          </div>
+        </div>
+
     </div>
 
-    <div class="col-md-2">
-      <div class="form-group">
-        <label class="control-label" for="nafasForm">Pernafasan</label>
-        <div class="input-group">
-          <input type="text" class="form-control" id="nafasForm" aria-describedby="nafasFormStatus">
-        </div>
-      </div>
-    </div>
   </div>
 
   <div class="row">
-    <h4>Keadaan Umum</h4>
+   <h3 class="box-title b-b">Keadaan Umum</h3>
     <small class="text-danger">Diisi Oleh Dokter</small>
-    <hr>
 
     <div class="form-group">
       <label> Kebiasaan
@@ -123,8 +131,7 @@
   </div>
 
   <div class="row">
-    <h4 class="box-title">Kajian Gangguan Sistem Yang Ada</h4>
-    <hr>
+   <h3 class="box-title b-b">Kajian Gangguan Sistem Yang Ada  </h3>
     <h5 class="m-b-20">Identifikasi masalah airway yang mungkin mempengaruhi type sedasi yang digunakan</h5>
     <div class="row">
       <div class="col-md-4">
@@ -240,7 +247,7 @@
     </div>
 
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-3">
 
         <div>
           <label> Batuk</label>
@@ -274,8 +281,11 @@
           </label>
         </div>
 
+      </div>
 
-        <div>
+      <div class="col-md-3">
+
+          <div>
           <label> Sedang Hamil</label>
           <label class="radio-inline p-l-0 m-0 m-r-10">
             <div class="radio radio-info">
@@ -290,10 +300,6 @@
             </div>
           </label>
         </div>
-
-      </div>
-
-      <div class="col-md-4">
 
         <div>
           <label> Muntah</label>
@@ -310,7 +316,11 @@
             </div>
           </label>
         </div>
+      
 
+      </div>
+
+      <div class="col-md-3">
 
         <div>
           <label> Pingsan</label>
@@ -349,7 +359,7 @@
 
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-3">
 
         <div>
           <label> Kejang</label>
@@ -445,7 +455,6 @@
     <div class="row">
       <div class="col-md">
         <div class="row">
-          <hr>
 
           <div class="col-md-6">
             <div class="form-group">
@@ -477,8 +486,7 @@
 
 
     <div class="row">
-      <h4>ASA CLASSIFICATION</h4>
-      <hr style="margin-top: 5px;">
+      <h3 class="box-title b-b">ASA CLASSIFICATION</h3>
 
       <div>
         <label>Asa Classification</label>
@@ -531,6 +539,12 @@
 
 
   </div>
+
+    
+  </div>
+
+  
+
 </body>
 <script src="./plugins/jquery/jquery.min.js"></script>
 <script src="./js/customs.js"></script>

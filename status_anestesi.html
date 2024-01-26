@@ -20,12 +20,15 @@
     <link rel="stylesheet" href="./plugins/fontawesome-6.4.2/css/v4-shims.css" rel="stylesheet">
 </head>
 <body>
-    <h2 class="text-center m-t-30 m-b-30">
-        Status Anestesi
-    </h2>
+
+    <div class="m-l-20 m-r-20">
+
+
+         <h2 class="text-center m-t-30 m-b-30">
+                Status Anestesi
+            </h2>
 
     <div class="row">
-        <div class="col-md-6">
             <div class="form-group">
 
                 <label>Asa Classification</label>
@@ -71,14 +74,10 @@
                         <label for="asaE">E</label>
                     </div>
                 </label>
-            </div>
 
-        </div>
+                <div>
 
-
-        <div class="col-md-6">
-            <div class="form-group">
-                <label>Golongan Darah</label>
+                    <label>Golongan Darah</label>
 
                 <label class="radio-inline">
                     <div class="radio radio-info">
@@ -114,8 +113,12 @@
                         <label for="GolRh">Rh</label>
                     </div>
                 </label>
+
+                </div>
+
             </div>
-        </div>
+
+            
     </div>
 
     <div class="row">
@@ -153,23 +156,28 @@
 
     </div>
 
-    <h4>Vital Sign</h4>
+    <h3 class="box-title b-b">Vital Sign</h3>
     <div class="row">
+        
         <div class="col-md-6">
-            <div class="form-group">
-                <label class="control-label" for="TdForm">TD</label>
+
+             <div class="form-group has-feedback">
+                <label for="inputTD" class="control-label">Tekanan Darah</label>
                 <div class="input-group">
-                    <input type="text" class="form-control" name="td" id="TdForm" aria-describedby="TdFormStatus">
-                    <span class="input-group-addon">mmHg</span>
+                <input type="text" class="form-control input-mask" id="inputTDS" null="false" name="tensi_sitolik" placeholder="Tekanan Darah Sitolik" value="" data-original-title="" title="">
+                <div class="input-group-addon">/</div>
+                <input type="text" class="form-control input-mask" id="inputTDD" null="false" name="tensi_diastolik" placeholder="Tekanan Darah Diastolik" value="" data-original-title="" title="">
+                <div class="input-group-addon">mmHg</div>
                 </div>
+                <span class="form-control-feedback"></span>
             </div>
         </div>
 
         <div class="col-md-6">
             <div class="form-group">
-                <label class="control-label" for="HrForm">HR</label>
+                <label class="control-label" for="HrForm">Nadi</label>
                 <div class="input-group">
-                    <input type="text" class="form-control" id="HrForm" aria-describedby="HrFormStatus">
+                    <input type="text" class="form-control" id="HrForm" aria-describedby="HrFormStatus" placeholder="Denyut Nadi Pasien">
                     <span class="input-group-addon">x/menit</span>
                 </div>
             </div>
@@ -177,9 +185,9 @@
 
         <div class="col-md-6">
             <div class="form-group">
-                <label class="control-label" for="RrForm">RR</label>
+                <label class="control-label" for="RrForm">Nafas</label>
                 <div class="input-group">
-                    <input type="text" class="form-control" id="RrForm" aria-describedby="RrFormStatus">
+                    <input type="text" class="form-control" id="RrForm" aria-describedby="RrFormStatus" placeholder="">
                     <span class="input-group-addon">x/menit</span>
                 </div>
             </div>
@@ -187,19 +195,19 @@
 
         <div class="col-md-6">
             <div class="form-group">
-                <label class="control-label" for="Spo2Form">Spo2</label>
+                <label class="control-label" for="Spo2Form">Saturasi Oksigen</label>
                 <div class="input-group">
                     <input type="text" class="form-control" name="spo2" id="Spo2Form" aria-describedby="Spo2FormStatus">
+                    <span class="input-group-addon">Spo2</span>
                 </div>
             </div>
         </div>
 
     </div>
 
-    <h4>Evaluasi Pra Induksi</h4>
-    <hr>
+    <h3 class="box-title b-b">Evaluasi Pra Induksi</h3>
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12">
             <div class="form-group">
                 <label for="" class="control-label">Makan Terakhir</label>
                 <input type="text" class="form-control" name="makan_terakhir" placeholder="Makan Terakhir">
@@ -223,7 +231,7 @@
     </div>
 
 
-    <h4>Daftar Tilik Keselamatan Pasien</h4>
+    <h3 class="box-title b-b">Daftar Tilik Keselamatan Pasien</h3>
     <div class="row">
 
         <div class="col-md-4">
@@ -258,7 +266,11 @@
                 <label class="custom-control-label" for="obat">Obat - obatan</label>
             </div>
 
-            <div class="custom-control custom-checkbox">
+        </div>
+
+        <div class="col-md-4">
+
+             <div class="custom-control custom-checkbox">
                 <input type="checkbox" class="custom-control-input" name="tilik_keselamatan[]" id="antibiotik">
                 <label class="custom-control-label" for="antibiotik">Antibiotik Profilaksis</label>
             </div>
@@ -267,10 +279,6 @@
                 <input type="checkbox" class="custom-control-input" name="tilik_keselamatan[]" id="pulseOxymeter">
                 <label class="custom-control-label" for="pulseOxymeter">Pulse Oxymeter</label>
             </div>
-
-        </div>
-
-        <div class="col-md-4">
 
             <div class="custom-control custom-checkbox">
                 <input type="checkbox" class="custom-control-input" name="tilik_keselamatan[]" id="ekg">
@@ -292,7 +300,11 @@
                 <label class="custom-control-label" for="nibp">NIBP</label>
             </div>
 
-            <div class="custom-control custom-checkbox">
+        </div>
+
+        <div class="col-md-4">
+
+             <div class="custom-control custom-checkbox">
                 <input type="checkbox" class="custom-control-input" name="tilik_keselamatan[]" id="termometer">
                 <label class="custom-control-label" for="termometer">Termometer</label>
             </div>
@@ -312,10 +324,6 @@
                 <label class="custom-control-label" for="penghangatCairan">Penghangat Cairan</label>
             </div>
 
-        </div>
-
-        <div class="col-md-4">
-
             <div class="custom-control custom-checkbox">
                 <input type="checkbox" class="custom-control-input" name="tilik_keselamatan[]" id="titikTekanan">
                 <label class="custom-control-label" for="titikTekanan">Titik titik tekanan diperiksa dan diberi bantalan</label>
@@ -330,8 +338,7 @@
     </div>
 
 
-    <h4>Induksi</h4>
-    <hr>
+    <h3 class="box-title b-b">Induksi</h3>
     <div class="row">
 
 
@@ -381,9 +388,9 @@
     </div>
 
 
-    <h4>Airway</h4>
+    <h3 class="box-title b-b">Airway</h3>
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12">
             <div class="form-group">
                 <label for="" class="control-label">Laringiskopi Derajat 1-4</label>
                 <input type="text" class="form-control" name="laringiskopi">
@@ -443,9 +450,13 @@
 
     </div>
 
-    <div class="form-group">
-        <label for="" class="control-label">Lokasi Infus / Tipe Kanula</label>
-        <textarea class="form-control" name="lokasi_infus" rows="3"></textarea>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="" class="control-label">Lokasi Infus / Tipe Kanula</label>
+                <textarea class="form-control" name="lokasi_infus" rows="3"></textarea>
+            </div>
+        </div>
     </div>
 
     <div class="row">
@@ -478,6 +489,12 @@
         </div>
 
     </div>
+
+
+
+    </div>
+
+   
 </body>
 <script src="./plugins/jquery/jquery.min.js"></script>
 <script src="./js/customs.js"></script>
