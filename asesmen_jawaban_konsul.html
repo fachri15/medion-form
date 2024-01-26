@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assesmen Pra Sedasi</title>
+    <title>Assesmen Jawaban Konsul</title>
     <!-- <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -54,9 +54,7 @@
 
       <div class="form-group">
         <label class="control-label" for="sadarForm">Kesadaran</label>
-        <div class="input-group">
           <input type="text" class="form-control" id="sadarForm" aria-describedby="sadarFormStatus" placeholder="Tingkat Kesadaran Pasien">
-        </div>
       </div>
 
       <div class="form-group">
@@ -99,36 +97,44 @@
     <small class="text-danger">Diisi Oleh Dokter</small>
 
     <div class="form-group">
-      <label> Kebiasaan
-        <input type="checkbox" class="custom-control-input" name="kebiasaan[]" id="kebiasaan">
-        <label class="custom-control-label" for="kebiasaan">Merokok > 20 Batang/Hari</label>
-      </label>
-    </div>
+			<label for="kebiasaan" class="control-label">Kebiasaan</label>
+			<div class="checkbox checkbox-info m-t-0">
+				<input id="kebiasaan" type="checkbox" name="kebiasaan[]">
+				<label for="kebiasaan"> Merokok > 20 Batang/Hari</label>
+			</div>
+		</div>
 
     <div class="form-group">
-      <label> Riwayat Alergi
-        <input type="checkbox" class="custom-control-input" name="riwayat[]" id="makan">
-        <label class="custom-control-label" for="makan">Makanan</label>
-        <input type="checkbox" class="custom-control-input" name="riwayat[]" id="obat">
-        <label class="custom-control-label" for="obat">Obat</label>
-      </label>
+			<label for="riwayat" class="control-label"> Riwayat Alergi</label>
+			<div class="checkbox checkbox-info m-t-0">
+				<input id="Rmakanan" type="checkbox" name="riwayat[]">
+				<label for="Rmakanan"> Makanan</label>
+				<input id="Robat" type="checkbox" name="riwayat[]">
+				<label for="Robat" class="m-l-20"> Obat</label>
+			</div>
+		</div>
+
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="" class="form-check-label text-center">Riwayat Penyakit Diderita</label>
+        <textarea class="form-control" name="ada" id="penyakitInText" rows="3" placeholder="Sebutkan Jika ada"></textarea>
+      </div>
+    </div>  
+
+    <div class="col-md-6">
+        <div class="form-group">
+          <label for="" class="form-check-label text-center">Riwayat Penyakit Keluarga</label>
+          <textarea class="form-control" name="ada" id="pkeluargaInText" rows="3" placeholder="Sebutkan Jika ada"></textarea>
+        </div>
     </div>
 
-    <div class="form-group">
-      <label for="" class="form-check-label text-center">Riwayat Penyakit Diderita</label>
-      <textarea class="form-control" name="ada" id="penyakitInText" rows="3" placeholder="Sebutkan Jika ada"></textarea>
+    <div class="col-md-6">
+          <div class="form-group">
+            <label for="" class="control-label">Riwayat Sedasi Sebelumnya</label>
+            <textarea class="form-control areaText" name="sedasi" rows="3"></textarea>
+          </div>
+        </div>
     </div>
-
-    <div class="form-group">
-      <label for="" class="form-check-label text-center">Riwayat Penyakit Keluarga</label>
-      <textarea class="form-control" name="ada" id="pkeluargaInText" rows="3" placeholder="Sebutkan Jika ada"></textarea>
-    </div>
-
-    <div class="form-group">
-      <label for="" class="control-label">Riwayat Sedasi Sebelumnya</label>
-      <textarea class="form-control areaText" name="sedasi" rows="3"></textarea>
-    </div>
-  </div>
 
   <div class="row">
    <h3 class="box-title b-b">Kajian Gangguan Sistem Yang Ada  </h3>
@@ -140,29 +146,29 @@
           <div>
             <label class="radio-inline p-l-0 m-0 m-r-10">
               <div class="radio radio-info">
-                <input type="radio" name="malampati" id="malampati" value="1" checked>
-                <label for="malampati">1</label>
+                <input type="radio" name="malampati" id="malampati1" value="1" checked>
+                <label for="malampati1">1</label>
               </div>
             </label>
 
             <label class="radio-inline p-l-0 m-0 m-r-10">
               <div class="radio radio-info">
-                <input type="radio" name="malampati" id="malampati" value="2">
-                <label for="malampati">2</label>
+                <input type="radio" name="malampati" id="malampati2" value="2">
+                <label for="malampati2">2</label>
               </div>
             </label>
 
             <label class="radio-inline p-l-0 m-0 m-r-10">
               <div class="radio radio-info">
-                <input type="radio" name="malampati" id="malampati" value="3">
-                <label for="malampati">3</label>
+                <input type="radio" name="malampati" id="malampati3" value="3">
+                <label for="malampati3">3</label>
               </div>
             </label>
 
             <label class="radio-inline p-l-0 m-0 m-r-10">
               <div class="radio radio-info">
-                <input type="radio" name="malampati" id="malampati" value="4">
-                <label for="malampati">4</label>
+                <input type="radio" name="malampati" id="malampati4" value="4">
+                <label for="malampati4">4</label>
               </div>
             </label>
           </div>
@@ -173,18 +179,14 @@
       <div class="col-md-4">
         <div class="form-group">
           <label class="control-label" for="mobilisasi">Mobilisasi Leher</label>
-          <div class="input-group">
-            <input type="text" class="form-control" id="mobilisasi" aria-describedby="mobilisasiFormStatus">
-          </div>
+          <input type="text" class="form-control" id="mobilisasi" aria-describedby="mobilisasiFormStatus">
         </div>
       </div>
 
       <div class="col-md-4">
         <div class="form-group">
           <label class="control-label" for="gigi">Gigi Palsu/Ompong</label>
-          <div class="input-group">
-            <input type="text" class="form-control" id="gigi" aria-describedby="gigiFormStatus">
-          </div>
+          <input type="text" class="form-control" id="gigi" aria-describedby="gigiFormStatus">
         </div>
       </div>
 
@@ -196,9 +198,7 @@
       <div class="col-md-4">
         <div class="form-group">
           <label class="control-label" for="JantungForm">Bunyi Jantung</label>
-          <div class="input-group">
-            <input type="text" class="form-control" id="JantungForm" name="" aria-describedby="JantungFormStatus">
-          </div>
+          <input type="text" class="form-control" id="JantungForm" name="" aria-describedby="JantungFormStatus">
         </div>
       </div>
 
@@ -249,150 +249,188 @@
     <div class="row">
       <div class="col-md-3">
 
-        <div>
-          <label> Batuk</label>
-          <label class="radio-inline p-l-0 m-0 m-r-10">
-            <div class="radio radio-info">
-              <input type="radio" name="batuk" id="batukTidakAda" value="tidak_ada" checked>
-              <label for="batukTidakAda">Tidak Ada</label>
-            </div>
-          </label>
-          <label class="radio-inline p-l-0 m-0 m-r-10">
-            <div class="radio radio-info">
-              <input type="radio" name="batuk" id="batukAda" value="ada">
-              <label for="batukAda">Ada</label>
-            </div>
-          </label>
-        </div>
+        <div class="form-group">
+						<label for="inputBatuk" class="control-label">Batuk</label>
+						<div class="radio-list">
 
-        <div>
-          <label> Sesak Nafas</label>
-          <label class="radio-inline p-l-0 m-0 m-r-10">
-            <div class="radio radio-info">
-              <input type="radio" name="sesaknafas" id="sesakTidakAda" value="tidak_ada" checked>
-              <label for="sesakTidakAda">Tidak Ada</label>
-            </div>
-          </label>
-          <label class="radio-inline p-l-0 m-0 m-r-10">
-            <div class="radio radio-info">
-              <input type="radio" name="sesaknafas" id="sesakAda" value="ada">
-              <label for="sesakAda">Ada</label>
-            </div>
-          </label>
-        </div>
+              <label class="radio-inline p-l-0 m-0 m-r-10">
+								<div class="radio radio-info">
+									<input type="radio" name="batuk" id="BatukTidakAda" value="Tidak Ada" checked>
+									<label for="BatukTidakAda">Tidak Ada </label>
+								</div>
+							</label>
+
+							<label class="radio-inline p-l-0 m-0 m-r-10">
+								<div class="radio radio-info">
+									<input type="radio" name="batuk" id="BatukAda" value="Ada">
+									<label for="BatukAda">Ada</label>
+								</div>
+							</label>							
+
+						</div>
+				</div>
+
+        <div class="form-group">
+						<label for="inputSesak" class="control-label">Sesak Nafas</label>
+						<div class="radio-list">
+
+              <label class="radio-inline p-l-0 m-0 m-r-10">
+								<div class="radio radio-info">
+									<input type="radio" name="sesak_nafas" id="SesakTidakAda" value="Tidak Ada" checked>
+									<label for="SesakTidakAda">Tidak Ada </label>
+								</div>
+							</label>
+
+							<label class="radio-inline p-l-0 m-0 m-r-10">
+								<div class="radio radio-info">
+									<input type="radio" name="sesak_nafas" id="SesakAda"  value="Ada">
+									<label for="SesakAda">Ada</label>
+								</div>
+							</label>							
+
+						</div>
+				</div>
 
       </div>
 
       <div class="col-md-3">
 
-          <div>
-          <label> Sedang Hamil</label>
-          <label class="radio-inline p-l-0 m-0 m-r-10">
-            <div class="radio radio-info">
-              <input type="radio" name="hamil" id="hamilTidakAda" value="tidak_ada" checked>
-              <label for="hamilTidakAda">Tidak Ada</label>
-            </div>
-          </label>
-          <label class="radio-inline p-l-0 m-0 m-r-10">
-            <div class="radio radio-info">
-              <input type="radio" name="hamil" id="hamilAda" value="ada">
-              <label for="hamilAda">Ada</label>
-            </div>
-          </label>
-        </div>
+        <div class="form-group">
+						<label for="inputHamil" class="control-label">Sedang Hamil</label>
+						<div class="radio-list">
 
-        <div>
-          <label> Muntah</label>
-          <label class="radio-inline p-l-0 m-0 m-r-10">
-            <div class="radio radio-info">
-              <input type="radio" name="muntah" id="muntahTidakAda" value="tidak_ada" checked>
-              <label for="muntahTidakAda">Tidak Ada</label>
-            </div>
-          </label>
-          <label class="radio-inline p-l-0 m-0 m-r-10">
-            <div class="radio radio-info">
-              <input type="radio" name="muntah" id="muntahAda" value="ada">
-              <label for="muntahAda">Ada</label>
-            </div>
-          </label>
-        </div>
+              <label class="radio-inline p-l-0 m-0 m-r-10">
+								<div class="radio radio-info">
+									<input type="radio" name="hamil" id="HamilTidakAda" value="Tidak Ada" checked>
+									<label for="HamilTidakAda">Tidak Ada </label>
+								</div>
+							</label>
+
+							<label class="radio-inline p-l-0 m-0 m-r-10">
+								<div class="radio radio-info">
+									<input type="radio" name="hamil" id="HamilAda" value="Ada">
+									<label for="HamilAda">Ada</label>
+								</div>
+							</label>							
+
+						</div>
+				</div>
+
+
+        <div class="form-group">
+						<label for="inputMuntah" class="control-label">Muntah</label>
+						<div class="radio-list">
+
+              <label class="radio-inline p-l-0 m-0 m-r-10">
+								<div class="radio radio-info">
+									<input type="radio" name="muntah" id="MuntahTidakAda" value="Tidak Ada" checked>
+									<label for="MuntahTidakAda">Tidak Ada </label>
+								</div>
+							</label>
+
+							<label class="radio-inline p-l-0 m-0 m-r-10">
+								<div class="radio radio-info">
+									<input type="radio" name="muntah" id="MuntahAda" value="Ada">
+									<label for="MuntahAda">Ada</label>
+								</div>
+							</label>							
+
+						</div>
+				</div>
       
 
       </div>
 
       <div class="col-md-3">
 
-        <div>
-          <label> Pingsan</label>
-          <label class="radio-inline p-l-0 m-0 m-r-10">
-            <div class="radio radio-info">
-              <input type="radio" name="pingsan" id="pingsanTidakAda" value="tidak_ada" checked>
-              <label for="pingasnTidakAda">Tidak Ada</label>
-            </div>
-          </label>
-          <label class="radio-inline p-l-0 m-0 m-r-10">
-            <div class="radio radio-info">
-              <input type="radio" name="pingsan" id="pingsanAda" value="ada">
-              <label for="pingsanAda">Ada</label>
-            </div>
-          </label>
+        <div class="form-group">
+						<label for="inputPingsan" class="control-label">Pingsan</label>
+						<div class="radio-list">
 
-        </div>
+              <label class="radio-inline p-l-0 m-0 m-r-10">
+								<div class="radio radio-info">
+									<input type="radio" name="pingsan" id="PingsanTidakAda" value="Tidak Ada" checked>
+									<label for="PingsanTidakAda">Tidak Ada </label>
+								</div>
+							</label>
+
+							<label class="radio-inline p-l-0 m-0 m-r-10">
+								<div class="radio radio-info">
+									<input type="radio" name="pingsan" id="PingsanAda" value="Ada">
+									<label for="PingsanAda">Ada</label>
+								</div>
+							</label>							
+
+						</div>
+				</div>
 
 
-        <div>
-          <label> Stroke</label>
-          <label class="radio-inline p-l-0 m-0 m-r-10">
-            <div class="radio radio-info">
-              <input type="radio" name="stroke" id="strokeTidakAda" value="tidak_ada" checked>
-              <label for="strokeTidakAda">Tidak Ada</label>
-            </div>
-          </label>
-          <label class="radio-inline p-l-0 m-0 m-r-10">
-            <div class="radio radio-info">
-              <input type="radio" name="stroke" id="strokeAda" value="ada">
-              <label for="strokeAda">Ada</label>
-            </div>
-          </label>
-        </div>
+        <div class="form-group">
+						<label for="inputStroke" class="control-label">Stroke</label>
+						<div class="radio-list">
 
+              <label class="radio-inline p-l-0 m-0 m-r-10">
+								<div class="radio radio-info">
+									<input type="radio" name="stroke" id="StrokeTidakAda" value="Tidak Ada" checked>
+									<label for="StrokeTidakAda">Tidak Ada </label>
+								</div>
+							</label>
+
+							<label class="radio-inline p-l-0 m-0 m-r-10">
+								<div class="radio radio-info">
+									<input type="radio" name="stroke" id="StrokeAda" value="Ada">
+									<label for="StrokeAda">Ada</label>
+								</div>
+							</label>							
+
+						</div>
+				</div>
 
       </div>
 
       <div class="col-md-3">
 
-        <div>
-          <label> Kejang</label>
-          <label class="radio-inline p-l-0 m-0 m-r-10">
-            <div class="radio radio-info">
-              <input type="radio" name="kejang" id="kejangTidakAda" value="tidak_ada" checked>
-              <label for="kejangTidakAda">Tidak Ada</label>
-            </div>
-          </label>
-          <label class="radio-inline p-l-0 m-0 m-r-10">
-            <div class="radio radio-info">
-              <input type="radio" name="kejang" id="kejangAda" value="ada">
-              <label for="kejangAda">Ada</label>
-            </div>
-          </label>
-        </div>
+        <div class="form-group">
+						<label for="inputKejang" class="control-label">Kejang</label>
+						<div class="radio-list">
 
-        <div>
-          <label> Kelainan Tulang Belakang</label>
-          <label class="radio-inline p-l-0 m-0 m-r-10">
-            <div class="radio radio-info">
-              <input type="radio" name="tulangbelakang" id="tulangbelakangeTidakAda" value="tidak_ada" checked>
-              <label for="strokeTidakAda">Tidak Ada</label>
-            </div>
-          </label>
-          <label class="radio-inline p-l-0 m-0 m-r-10">
-            <div class="radio radio-info">
-              <input type="radio" name="tulangbelakang" id="tulangbelakangAda" value="ada">
-              <label for="tulangbelakangAda">Ada</label>
-            </div>
-          </label>
+              <label class="radio-inline p-l-0 m-0 m-r-10">
+								<div class="radio radio-info">
+									<input type="radio" name="kejang" id="KejangTidakAda" value="Tidak Ada" checked>
+									<label for="KejangTidakAda">Tidak Ada </label>
+								</div>
+							</label>
 
-        </div>
+							<label class="radio-inline p-l-0 m-0 m-r-10">
+								<div class="radio radio-info">
+									<input type="radio" name="kejang" id="KejangAda"  value="Ada">
+									<label for="KejangAda">Ada</label>
+								</div>
+							</label>							
+
+						</div>
+				</div>
+
+        <div class="form-group">
+						<label for="inputTulang" class="control-label">Kelainan Tulang Belakang</label>
+						<div class="radio-list">
+
+              <label class="radio-inline p-l-0 m-0 m-r-10">
+								<div class="radio radio-info">
+									<input type="radio" name="tulang_belakang" id="TulangTidakAda" value="Tidak Ada" checked>
+									<label for="TulangTidakAda">Tidak Ada </label>
+								</div>
+							</label>
+
+							<label class="radio-inline p-l-0 m-0 m-r-10">
+								<div class="radio radio-info">
+									<input type="radio" name="tulang_belakang" id="TulangAda" value="Ada">
+									<label for="TulangAda">Ada</label>
+								</div>
+							</label>							
+
+						</div>
+				</div>
 
       </div>
 
@@ -415,33 +453,33 @@
       </div>
     </div>
 
-    <div>
-      <label for="" class="form-check-label text-center">Hasil Assement Tindakan Kedokteran</label>
+    <div class="form-group">
+						<label for="inputHasilTindakan" class="control-label">Hasil Assement Tindakan Kedokteran</label>
+						<div class="radio-list">
 
-      <label class="radio-inline p-l-0 m-0 m-r-10">
-        <div class="radio radio-info">
-          <input type="radio" name="hasil_assesmen" id="asesmenSetuju" value="setuju" checked>
-          <label for="asesmenSetuju">Setuju</label>
-        </div>
-      </label>
+              <label class="radio-inline p-l-0 m-0 m-r-10">
+								<div class="radio radio-info">
+									<input type="radio" name="hasil_assesmen_tindakan" id="AsessmenSetuju" value="Assement Setuju" checked>
+									<label for="AsessmenSetuju">Assesment Setuju</label>
+								</div>
+							</label>
 
-      <label class="radio-inline p-l-0 m-0 m-r-10">
-        <div class="radio radio-info">
-          <input type="radio" name="hasil_assesmen" id="asesmenTidakSetuju" value="tidak setuju">
-          <label for="asesmenTidakSetuju">Tidak Setuju</label>
-        </div>
-      </label>
+							<label class="radio-inline p-l-0 m-0 m-r-10">
+								<div class="radio radio-info">
+									<input type="radio" name="hasil_assesmen_tindakan" id="AsessmenTidakSetuju" value="Assement Tidak Setuju">
+									<label for="AsessmenTidakSetuju">Assement Tidak Setuju</label>
+								</div>
+							</label>	
+              
+              <label class="radio-inline p-l-0 m-0 m-r-10">
+								<div class="radio radio-info">
+									<input type="radio" name="hasil_assesmen_tindakan" id="tindakanDokter" value="Tindakan Dokter">
+									<label for="tindakanDokter">Tindakan Dokter</label>
+								</div>
+							</label>
 
-      <label class="radio-inline p-l-0 m-0 m-r-10">
-        <div class="radio radio-info">
-          <input type="radio" name="hasil_assesmen" id="tindakanDokter" value="tindakan dokter">
-          <label for="tindakanDokter">Tindakan Dokter</label>
-        </div>
-      </label>
-
-    </div>
-
-
+						</div>
+				</div>
 
   </div>
 
@@ -488,45 +526,47 @@
     <div class="row">
       <h3 class="box-title b-b">ASA CLASSIFICATION</h3>
 
-      <div>
-        <label>Asa Classification</label>
+      <div class="form-group">
+						<label for="inputAsa" class="control-label">Asa Classification</label>
+						<div class="radio-list">
 
-        <label class="radio-inline p-l-0 m-0 m-r-10">
-          <div class="radio radio-info">
-            <input type="radio" name="asa" id="asa" value="1" checked>
-            <label for="asa">1</label>
-          </div>
-        </label>
+              <label class="radio-inline p-l-0 m-0 m-r-10">
+								<div class="radio radio-info">
+									<input type="radio" name="asa" id="Asa1" value="1" checked>
+									<label for="Asa1">1</label>
+								</div>
+							</label>
 
-        <label class="radio-inline p-l-0 m-0 m-r-10">
-          <div class="radio radio-info">
-            <input type="radio" name="asa" id="asa" value="2">
-            <label for="asa">2</label>
-          </div>
-        </label>
+							<label class="radio-inline p-l-0 m-0 m-r-10">
+								<div class="radio radio-info">
+									<input type="radio" name="asa" id="Asa2" value="2">
+									<label for="Asa2">2</label>
+								</div>
+							</label>	
 
-        <label class="radio-inline p-l-0 m-0 m-r-10">
-          <div class="radio radio-info">
-            <input type="radio" name="asa" id="asa" value="3">
-            <label for="asa">3</label>
-          </div>
-        </label>
+							<label class="radio-inline p-l-0 m-0 m-r-10">
+								<div class="radio radio-info">
+									<input type="radio" name="asa" id="Asa3" value="3">
+									<label for="Asa3">3</label>
+								</div>
+							</label>		
+              
+              <label class="radio-inline p-l-0 m-0 m-r-10">
+								<div class="radio radio-info">
+									<input type="radio" name="asa" id="Asa4" value="4">
+									<label for="Asa4">4</label>
+								</div>
+							</label>	
 
-        <label class="radio-inline p-l-0 m-0 m-r-10">
-          <div class="radio radio-info">
-            <input type="radio" name="asa" id="asa" value="4">
-            <label for="asa">4</label>
-          </div>
-        </label>
+              <label class="radio-inline p-l-0 m-0 m-r-10">
+								<div class="radio radio-info">
+									<input type="radio" name="asa" id="Asa5" value="5">
+									<label for="Asa5">5</label>
+								</div>
+							</label>	
 
-        <label class="radio-inline p-l-0 m-0 m-r-10">
-          <div class="radio radio-info">
-            <input type="radio" name="asa" id="asa" value="5">
-            <label for="asa">5</label>
-          </div>
-        </label>
-
-      </div>
+						</div>
+				</div>
 
       <div class="col-md">
         <div class="form-group">
