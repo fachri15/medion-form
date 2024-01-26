@@ -20,6 +20,60 @@
     <link rel="stylesheet" href="./plugins/fontawesome-6.4.2/css/v4-shims.css" rel="stylesheet">
 </head>
 <body>
+	<section>
+		<h4 class="box-title b-b">SIGN OUT</h4>
+		<div class="form-group">
+			<div id="signout" class="disabled form-control date-mask">26 Januari 2024 10:46:57</div>
+			<input type="hidden" id="input-signout" name="keselamatan[sign_out]" value="2024-01-26 10:46:57">
+		</div>
+
+		<div class="form-group">
+			<label for="nama_dokter" class="control-label">1. Perawat melakukan konfirmasi secara verbal</label>
+			<div class="checkbox checkbox-info m-t-0">
+				<input id="nama_prosedur" type="checkbox" name="keselamatan[nama_prosedur]">
+				<label for="nama_prosedur"> Nama prosedur tindakan</label>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="checkbox checkbox-info m-t-0">
+				<input id="hitung_instrumen" type="checkbox" name="keselamatan[hitung_instrumen]">
+				<label for="hitung_instrumen"> Instrumen, kasa dan jarum telah dihitung dengan benar/lengkap</label>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="checkbox checkbox-info m-t-0">
+				<input id="label_spesimen" type="checkbox" name="keselamatan[label_spesimen]">
+				<label for="label_spesimen"> Spesimen telah diberi label (termasuk nama pasien &amp; asal jaringan spesimen)</label>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="" class="control-label">Apakah ada masalah dengan peralatan selama operasi?</label>
+			<div class="radio-list">
+				<label class="radio-inline p-l-0 m-0 m-r-10">
+					<div class="radio radio-info">
+						<input type="radio" name="keselamatan[masalah_peralatan]" id="masalah_peralatan_y" value="Ya">
+						<label for="masalah_peralatan_y">Ya</label>
+					</div>
+				</label>
+				<label class="radio-inline p-l-0 m-0 m-r-10">
+					<div class="radio radio-info">
+						<input type="radio" name="keselamatan[masalah_peralatan]" id="masalah_peralatan_t" value="Tidak">
+						<label for="masalah_peralatan_t">Tidak </label>
+					</div>
+				</label>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="nama_dokter" class="control-label">2. Dokter Bedah, Dokter Anastesi &amp; Perawat</label>
+			<div class="checkbox checkbox-info m-t-0">
+				<input id="review_pemulihan" type="checkbox" name="keselamatan[review_pemulihan]">
+				<label for="review_pemulihan"> Telah melakukan review masalah utama untuk pemulihan pasien</label>
+			</div>
+		</div>
+	</section>
+
+
   <h3 class="box-title b-b">TANDA-TANDA VITAL</h3>
 							<div class="row">
 								<div class="col-md-6">
