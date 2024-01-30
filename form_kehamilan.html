@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Kehamilan</title>
+    <!-- <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./plugins/sidebar-nav/dist/sidebar-nav.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/colors/megna-dark.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="./plugins/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./plugins/fontawesome-6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./plugins/fontawesome-6.4.2/css/v4-shims.css" rel="stylesheet">
+</head>
+<body>
+
+ 
+    <div class="container-fluid">
+
+        <h2 class="text-center m-t-30 m-b-30">
+            Form Kelahiran
+        </h2>
+
+        <form action="">
+
+            <div class="row">
+                <div class="col-md-6">
+                <div class="row">
+                    <label for="">Riwayat Kelahiran</label>
+                    <div class="form-group has-feedback">
+                        <div class="input-group">
+                            <div class="input-group-addon">Anak Ke</div>
+                            <input type="text" class="form-control input-mask" id="inputTDS" null="false" name="anak_ke" value="" data-original-title="" title="">
+                            <div class="input-group-addon">dari</div>
+                            <input type="text" class="form-control input-mask" id="inputTDD" null="false" name="saudara" value="" data-original-title="" title="">
+                            <div class="input-group-addon">Saudara</div>
+                        </div>
+                        <span class="form-control-feedback"></span>
+                        </div>
+                </div>
+            </div>
+
+            
+
+            </div>
+
+            <div class="row">
+                 <div class="form-group">
+                    <label for="inputCara" class="control-label">Cara Kelahiran</label>
+                    <div class="radio-list">
+                        <label class="radio-inline p-l-0 m-0 m-r-10">
+                            <div class="radio radio-info">
+                                <input type="radio" name="cara_kelahiran" id="Spontan" value="Spontan" checked>
+                                <label for="Spontan">Spontan</label>
+                            </div>
+                        </label>
+                        <label class="radio-inline form-inline p-l-0 m-0 m-r-10">
+                            <div class="radio radio-info">
+                                <input type="radio" name="cara_kelahiran" id="lainlain" value="Lain-Lain">
+                                <label for="lainlain">Lain-Lain</label>
+                                <input type="text" class="form-control input-sm" id="LainLainnya" name="cara_kelahiran"> 							
+                            </div>
+                        </label>
+                    </div>
+             </div>
+            </div>
+
+            <div class="row">
+                 <div class="form-group">
+                    <label for="inputKelainan" class="control-label">Kelainan Bawaan</label>
+                    <div class="radio-list">
+                        <label class="radio-inline p-l-0 m-0 m-r-10">
+                            <div class="radio radio-info">
+                                <input type="radio" name="kelainan_bawaan" id="tidakAda" value="Tidak Ada" checked>
+                                <label for="tidakAda">Tidak Ada</label>
+                            </div>
+                        </label>
+                        <label class="radio-inline form-inline p-l-0 m-0 m-r-10">
+                            <div class="radio radio-info">
+                                <input type="radio" name="kelainan_bawaan" id="ada" value="Ada">
+                                <label for="ada">Ada</label>
+                                <input type="text" class="form-control input-sm" id="adaLainnya" name="kelainan_bawaan"> 							
+                            </div>
+                        </label>
+                    </div>
+             </div>
+            </div>
+
+            <div class="row">
+                        <div class="form-group">
+                            <label for="inputRiwayat" class="control-label">
+                                Riwayat Imunisasi
+                                <div>
+                                    <button type="button" class="btn btn-info btn-sm btn-isian-riwayat" data-input="BCG">BCG</button>
+                                    <button type="button" class="btn btn-sm btn-info btn-isian-riwayat" data-input="DPT">DPT</button>
+                                    <button type="button" class="btn btn-info btn-sm btn-isian-riwayat" data-input="Polio">Polio</button>
+                                    <button type="button" class="btn btn-info btn-sm btn-isian-riwayat" data-input="Campak">Campak</button>
+                                    <button type="button" class="btn btn-info btn-sm btn-isian-riwayat" data-input="Hepatitis B">Hepatitis B</button>
+                                </div>
+                            </label>
+                            <textarea id="inputRiwayat" class="form-control" rows="3" name="riwayat_imunisasi"></textarea>
+                        </div>
+
+            </div>
+
+            <h3 class="box-title b-b">Riwayat Tumbuh Kembang</h3>
+            <div class="row m-t-20">
+
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Mulai bisa Tengkurap, Usia</label>
+                        <input type="text" class="form-control" name="" placeholder="Mulai Bisa Bicara">
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Pertumbuhan gigi Pertama, Usia</label>
+                        <input type="text" class="form-control" name="" placeholder="Pertumbuhan gigi Pertama">
+                    </div>
+                </div>
+
+                 <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Berjalan Sendiri, Usia</label>
+                        <input type="text" class="form-control" name="" placeholder="Berjalan Sendiri">
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Mulai Bisa Berdiri, Usia</label>
+                        <input type="text" class="form-control" name="" placeholder="Mulai Bisa Berdiri">
+                    </div>
+                </div>
+
+                 <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Mulai bisa membaca, Usia</label>
+                        <input type="text" class="form-control" name="" placeholder="Mulai Bisa Membaca">
+                    </div>
+                </div>
+
+                 <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Mulai bisa Duduk, Usia</label>
+                        <input type="text" class="form-control" name="" placeholder="Mulai Bisa Duduk">
+                    </div>
+                </div>
+
+                 <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Mulai bisa Bicara, Usia</label>
+                        <input type="text" class="form-control" name="" placeholder="Mulai Bisa Bicara">
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Mulai bisa Membaca, Usia</label>
+                        <input type="text" class="form-control" name="" placeholder="Mulai Bisa Membaca">
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Mulai bisa Menulis, Usia</label>
+                        <input type="text" class="form-control" name="" placeholder="Mulai Bisa Menulis">
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Gangguan Perkembangan Mental / Emosi</label>
+                        <textarea class="form-control" name="" rows="3" placeholder="Jelaskan, Bila Ada"></textarea>
+                    </div>
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+  
+
+</body>
+<script src="./plugins/jquery/jquery.min.js"></script>
+<script src="./js/customs.js"></script>
+<script src="./bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./plugins/blockUI/jquery.blockUI.js"></script>
+</html>

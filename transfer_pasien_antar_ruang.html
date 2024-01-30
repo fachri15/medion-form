@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer Pasien Antar Ruang</title>
+    <!-- <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./plugins/sidebar-nav/dist/sidebar-nav.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/colors/megna-dark.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="./plugins/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./plugins/fontawesome-6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./plugins/fontawesome-6.4.2/css/v4-shims.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container-fluid">
+
+    <h2 class="text-center m-t-20 m-b-20">
+    Transfer Pasien Antar Ruang
+   </h2>
+
+   <div class="row m-t-15 m-b-15">
+
+        <div class="form-group">
+            <label for="" class="form-check-label text-center">Diagnosis Utama</label>
+            <textarea class="form-control" name="diagnosis_utama" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="" class="form-check-label text-center">Diagnosis Sekunder</label>
+            <textarea class="form-control" name="diagnosis_sekunder" rows="3"></textarea>
+        </div>
+
+   </div>
+
+   <div class="row">
+        <h3 class="box-title b-b">Alasan Pindah Ruangan</h3>
+
+            <div class="form-group">
+                <label for="inputKondisiPasien" class="control-label">Kondisi Pasien</label>
+                <div class="radio-list">
+
+                    <label class="radio-inline p-l-0 m-0 m-r-10">
+                        <div class="radio radio-info">
+                            <input type="radio" name="alasan_kondisi_pasien" id="Memburuk" value="Memburuk" checked>
+                            <label for="Memburuk">Memburuk </label>
+                        </div>
+                    </label>
+
+                    <label class="radio-inline p-l-0 m-0 m-r-10">
+                        <div class="radio radio-info">
+                            <input type="radio" name="alasan_kondisi_pasien" id="Stabil" value="Stabil">
+                            <label for="Stabil">Stabil</label>
+                        </div>
+                    </label>		
+                    
+                    <label class="radio-inline p-l-0 m-0 m-r-10">
+                        <div class="radio radio-info">
+                            <input type="radio" name="alasan_kondisi_pasien" id="TidakAdaPerubahan" value="Tidak Ada Perubahan">
+                            <label for="TidakAdaPerubahan">Tidak Ada Perubahan</label>
+                        </div>
+                    </label>		
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="inputFasilitas" class="control-label">Fasilitas</label>
+                <div class="radio-list">
+
+                    <label class="radio-inline p-l-0 m-0 m-r-10">
+                        <div class="radio radio-info">
+                            <input type="radio" name="alasan_fasilitas" id="kurangMemadai" value="Kurang Memadai" checked>
+                            <label for="kurangMemadai">Kurang Memadai </label>
+                        </div>
+                    </label>
+
+                    <label class="radio-inline p-l-0 m-0 m-r-10">
+                        <div class="radio radio-info">
+                            <input type="radio" name="alasan_fasilitas" id="Memadai" value="Memadai">
+                            <label for="Memadai">Memadai</label>
+                        </div>
+                    </label>				
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="inputTenaga" class="control-label">Tenaga</label>
+                <div class="radio-list">
+
+                    <label class="radio-inline p-l-0 m-0 m-r-10">
+                        <div class="radio radio-info">
+                            <input type="radio" name="alasan_tenaga" id="butuhAhli" value="Membutuhkan yang lebih ahli" checked>
+                            <label for="butuhAhli">Membutuhkan yang lebih ahli </label>
+                        </div>
+                    </label>
+
+                    <label class="radio-inline p-l-0 m-0 m-r-10">
+                        <div class="radio radio-info">
+                            <input type="radio" name="alasan_tenaga" id="jumlahKurang" value="Jumlah Kurang">
+                            <label for="jumlahKurang">Jumlah Kurang</label>
+                        </div>
+                    </label>				
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="" class="form-check-label text-center">Alasan Lainnya</label>
+                <textarea class="form-control" name="alasan_lainnya" rows="3"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="inputPindahPasien" class="control-label">Metode Pemindahan Pasien</label>
+                <div class="radio-list">
+
+                    <label class="radio-inline p-l-0 m-0 m-r-10">
+                        <div class="radio radio-info">
+                            <input type="radio" name="metode_pemindahan_pasien" id="kursiRoda" value="Kursi Roda" checked>
+                            <label for="kursiRoda">Kursi Roda </label>
+                        </div>
+                    </label>
+
+                    <label class="radio-inline p-l-0 m-0 m-r-10">
+                        <div class="radio radio-info">
+                            <input type="radio" name="metode_pemindahan_pasien" id="Brankar" value="Brankar">
+                            <label for="Brankar">Brankar</label>
+                        </div>
+                    </label>		
+                    
+                    <label class="radio-inline p-l-0 m-0 m-r-10">
+                        <div class="radio radio-info">
+                            <input type="radio" name="metode_pemindahan_pasien" id="tempatTidur" value="Tempat Tidur">
+                            <label for="tempatTidur">Tempat Tidur</label>
+                        </div>
+                    </label>		
+
+                </div>
+            </div>
+
+   </div>
+
+   <div class="row">
+
+    <div class="form-group">
+                <label for="inputSetujui" class="control-label">Pasien/Keluarga mengetahui dan menyetujui</label>
+                <div class="radio-list">
+
+                    <label class="radio-inline p-l-0 m-0 m-r-10">
+                        <div class="radio radio-info">
+                            <input type="radio" name="alasan_pemindahan" id="pindahYa" value="Ya" checked>
+                            <label for="pindahYa">Ya </label>
+                        </div>
+                    </label>
+
+                    <label class="radio-inline p-l-0 m-0 m-r-10">
+                        <div class="radio radio-info">
+                            <input type="radio" name="alasan_pemindahan" id="pindahTidak" value="Tidak">
+                            <label for="pindahTidak">Tidak</label>
+                        </div>
+                    </label>				
+
+                </div>
+    </div>
+
+    <h5 class="box-title">Bila pemberi persetujuan adalah pasien, lengkapi isian berikut</h5>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Nama</label>
+                <input type="text" class="form-control" name="nama_persetujuan" placeholder="Nama">
+            </div>
+        </div>
+
+           <div class="col-md-6">
+                <div class="form-group">
+                    <label>Hubungan</label>
+                    <input type="text" class="form-control" name="hubungan_persetujuan" placeholder="Hubungan">
+                </div>
+           </div>
+
+   </div>
+
+   <label for="">Peralatan yang menyertai saat pindah: </label>
+   <div class="row">
+             <div class="col-md-2">
+
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" name="peralatan_pindah[]" id="o2Portable">
+                    <label class="custom-control-label" for="o2Portable">O2 Portable</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" name="peralatan_pindah[]" id="Suction">
+                    <label class="custom-control-label" for="Suction">Suction</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" name="peralatan_pindah[]" id="ngt">
+                    <label class="custom-control-label" for="ngt">NGT</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" name="peralatan_pindah[]" id="Infus">
+                    <label class="custom-control-label" for="Infus">Infus</label>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="form-inline m-l-20">
+                    <label class="control-label" for="kebutuhanO2">Kebutuhan</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control input-sm" id="kebutuhanO2" aria-describedby="kebutuhanO2FormStatus">
+                        <span class="input-group-addon">x/menit</span>
+                    </div>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" name="peralatan_pindah[]" id="Ventilator">
+                    <label class="custom-control-label" for="Ventilator">Ventilator</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" name="peralatan_pindah[]" id="kateterUrine">
+                    <label class="custom-control-label" for="kateterUrine">Kateter Urine</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" name="peralatan_pindah[]" id="syringePump">
+                    <label class="custom-control-label" for="syringePump">Syringe Pump</label>
+                </div>
+
+            </div>
+
+   </div>
+
+   <div class="row">
+        <div class="form-group">
+            <label for="" class="form-check-label">Keadaan Pasien Saat Pindah</label>
+            <textarea class="form-control" name="keadaan_pasien_saat_pindah" id="keadaanPasien" rows="3" "></textarea>
+        </div>
+   </div>
+
+   <div class="row">
+
+    <div class="col-md-4">     
+        <div class="form-group">
+            <label class="control-label" for="keadaanUmum">Keadaan Umum</label>                     
+            <input type="text" class="form-control" name="keadaan_umum" id="KeadaanForm" aria-describedby="KeadaanFormStatus">
+        </div>
+    </div>
+
+    <div class="col-md-8">     
+        <div class="form-group has-feedback">
+        <label for="inputTD" class="control-label">Tekanan Darah</label>
+        <div class="input-group">
+            <input type="text" class="form-control input-mask" id="inputTDS" null="false" name="tensi_sitolik" placeholder="Tekanan Darah Sitolik" value="" data-original-title="" title="">
+            <div class="input-group-addon">/</div>
+            <input type="text" class="form-control input-mask" id="inputTDD" null="false" name="tensi_diastolik" placeholder="Tekanan Darah Diastolik" value="" data-original-title="" title="">
+            <div class="input-group-addon">mmHg</div>
+        </div>
+        <span class="form-control-feedback"></span>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="form-group">
+            <label class="control-label" for="PernafasanForm">Pernafasan</label>                     
+            <div class="input-group">
+                <input type="text" class="form-control" id="PernafasanForm" aria-describedby="RrFormStatus">
+                <span class="input-group-addon">x/mnt</span>
+            </div>                        
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="form-group">
+            <label class="control-label" for="sadarForm">Kesadaran</label>
+            <input type="text" class="form-control" id="sadarForm" aria-describedby="sadarFormStatus" placeholder="Tingkat Kesadaran Pasien">
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="form-group">
+            <label class="control-label" for="NadiForm">Nadi</label>                     
+                <div class="input-group">
+                    <input type="text" class="form-control" id="NadiForm" aria-describedby="NadiFormStatus">
+                    <span class="input-group-addon">x/mnt</span>
+                </div>                        
+            </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="form-group">
+            <label class="control-label" for="SuhuForm">Suhu</label>                     
+                <div class="input-group">
+                    <input type="text" class="form-control" id="SuhuForm" aria-describedby="NadiFormStatus">
+                    <span class="input-group-addon">°C</span>
+                </div>                        
+            </div>
+    </div>
+
+   </div>
+
+   <div class="row m-b-20">
+
+    <h3 class="box-title b-b">Informasi Medis</h3>
+
+        <div class="col-md-2">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" name="informasi_medis[]" id="Disabilitas">
+                <label class="custom-control-label" for="Disabilitas">Disabilitas</label>
+            </div>
+
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" name="informasi_medis[]" id="Amputasi">
+                <label class="custom-control-label" for="Amputasi">Amputasi</label>
+            </div>
+
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" name="informasi_medis[]" id="Paralisis">
+                <label class="custom-control-label" for="Paralisis">Paralisis</label>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" name="informasi_medis[]" id="Kontraktur">
+                <label class="custom-control-label" for="Kontraktur">Kontraktur</label>
+            </div>
+
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" name="informasi_medis[]" id="ulkusDekubitus">
+                <label class="custom-control-label" for="ulkusDekubitus">Ulkus Dekubitus</label>
+            </div>
+        </div>
+
+   </div>
+
+    <label for="">Gangguan</label>
+    <div class="row m-b-10 m-t-10">
+            <div class="col-md-2">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" name="informasi_medis_gangguan[]" id="mental">
+                    <label class="custom-control-label" for="mental">Mental</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" name="informasi_medis_gangguan[]" id="pendengaran">
+                    <label class="custom-control-label" for="pendengaran">Pendengaran</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" name="informasi_medis_gangguan[]" id="sensasi">
+                    <label class="custom-control-label" for="sensasi">Sensasi</label>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" name="informasi_medis_gangguan[]" id="bicara">
+                    <label class="custom-control-label" for="bicara">Bicara</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" name="informasi_medis_gangguan[]" id="penglihatan">
+                    <label class="custom-control-label" for="penglihatan">Penglihatan</label>
+                </div>
+            </div>
+    </div>
+
+    <label for="">Inkontinensia</label>
+    <div class="row m-b-10 m-t-10">
+        <div class="col-md-2">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" name="inkontinensia[]" id="urine">
+                    <label class="custom-control-label" for="urine">Urine</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" name="inkontinensia[]" id="alvi">
+                    <label class="custom-control-label" for="alvi">Alvi</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" name="inkontinensia[]" id="saliva">
+                    <label class="custom-control-label" for="saliva">Saliva</label>
+                </div>
+            </div>
+    </div>
+
+    <label for="">Potensial untuk dilakukan rehabilitasi</label>
+    <div class="row m-b-10 m-t-10">
+            <div class="col-md-2">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="potensi_rehab[]" id="baik">
+                        <label class="custom-control-label" for="baik">Baik</label>
+                    </div>
+
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="potensi_rehab[]" id="sedang">
+                        <label class="custom-control-label" for="sedang">Sedang</label>
+                    </div>
+
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="potensi_rehab[]" id="buruk">
+                        <label class="custom-control-label" for="buruk">Buruk</label>
+                    </div>
+                </div>
+    </div>
+
+    <label for="">Pendamping Saat Pasien Pindah</label>
+    <div class="row">
+
+        <div class="col-md-12">
+            <div class="form-group">
+                <label class="control-label" for="petugasForm">Nama Petugas</label>
+                <input type="text" class="form-control" id="petugasForm" name="nama_petugas" aria-describedby="petugasFormStatus" placeholder="Nama Petugas">
+                </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="" class="form-check-label text-center">Pemeriksaan Fisis</label>
+                <textarea class="form-control" name="pemeriksaan_fisik" rows="3" placeholder="Status Generalis (Temuan Yang Signifikan)"></textarea>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="" class="form-check-label text-center">Status Lokalis</label>
+                <textarea class="form-control" name="status_generalis" rows="3" placeholder="Status Generalis (Temuan Yang Signifikan)"></textarea>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="form-group">
+                <label for="">Pemeriksaan Penunjang Diagnostik yang sudah dilakukan (EKG,Lab,dll)</label>
+                <textarea class="form-control" name="pemeriksaan_penunjang_diagnostik" rows="3"></textarea>
+            </div>
+
+         <div class="form-group">
+                <label for="">Intervensi / Tindakan yang sudah dilakukan</label>
+                <textarea class="form-control" name="intervensi" rows="3"></textarea>
+            </div>
+
+             <div class="form-group">
+                <label for="">Diet</label>
+                <textarea class="form-control" name="Diet" rows="3"></textarea>
+            </div>
+
+             <div class="form-group">
+                <label for="">Rencana Perawatan Selanjutnya</label>
+                <textarea class="form-control" name="rencana_perawatan" rows="3"></textarea>
+            </div>
+
+            <div class="row">
+
+                <h3 class="box-title b-b">Terapi Pindah</h3>
+
+                  <table class="table table-flush">
+                    <thead class="thead-light">
+                    <tr>
+                    <th>No</th>
+                    <th>Nama Obat</th>
+                    <th>Jumlah</th>
+                    <th>Dosis</th>
+                    <th>Frekuensi</th>
+                    <th>Cara Pembelian</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    <td>1</td>
+                    <td><input type="text" name="" class="form-control"></td>
+                    <td><input type="text" name="" class="form-control"></td>
+                    <td><input type="text" name="" class="form-control"></td>
+                    <td><input type="text" name="" class="form-control"></td>
+                    <td><input type="text" name="" class="form-control"></td>
+                    </tr>                                  
+                    </tbody>
+                </table>
+
+            </div>
+
+    </div>
+    
+  </div>
+
+  
+
+</body>
+<script src="./plugins/jquery/jquery.min.js"></script>
+<script src="./js/customs.js"></script>
+<script src="./bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./plugins/blockUI/jquery.blockUI.js"></script>
+</html>
